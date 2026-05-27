@@ -642,7 +642,7 @@ export default function Home() {
                 {[...Array(22)].map((_, i) => (
                   <motion.div
                     key={`visitor-pulse-${i}`}
-                    className="pointer-events-none absolute z-20 h-2.5 w-2.5 rounded-full bg-white"
+                    className="pointer-events-none absolute z-[2] h-2.5 w-2.5 rounded-full bg-white"
                     style={{
                       left: `${8 + (i * 4) % 84}%`,
                       top: `${10 + (i * 7) % 78}%`,
@@ -669,7 +669,7 @@ export default function Home() {
                 {[...Array(10)].map((_, i) => (
                   <motion.div
                     key={`visitor-trail-${i}`}
-                    className="pointer-events-none absolute z-10 h-[2px] rounded-full"
+                    className="pointer-events-none absolute z-[1] h-[2px] rounded-full"
                     style={{
                       left: `${4 + i * 9}%`,
                       top: `${15 + (i % 5) * 13}%`,
@@ -693,18 +693,18 @@ export default function Home() {
                     }}
                   />
                 ))}
-                <div className="flex min-h-[34rem] flex-col justify-between rounded-[1.7rem] border border-white/20 bg-[#0b1020]/92 p-6 text-white backdrop-blur-xl">
+                <div className="relative z-30 flex min-h-[34rem] flex-col justify-between rounded-[1.7rem] border border-white/20 bg-[#0b1020] p-6 text-white shadow-2xl shadow-violet-500/10 backdrop-blur-xl">
                   <div>
                     <div className="mb-6 flex items-center gap-3">
                       <div className="h-3 w-3 rounded-full bg-emerald-400 shadow-[0_0_20px_rgba(74,222,128,0.9)]" />
                       <p className="text-sm font-black tracking-[0.25em] text-emerald-300">LIVE SYSTEM</p>
                     </div>
 
-                    <h2 className="max-w-md text-3xl font-black leading-tight xl:text-4xl">
+                    <h2 className="max-w-md text-3xl font-black leading-tight text-white xl:text-4xl">
                       Your website should sell before you speak.
                     </h2>
 
-                    <p className="mt-4 max-w-lg text-sm leading-7 text-white/65 hover:text-white xl:text-base">
+                    <p className="mt-4 max-w-lg text-sm leading-7 text-white/75 hover:text-white xl:text-base">
                       Most websites only look good. The best ones create trust, explain positioning, and move customers toward action immediately.
                     </p>
                   </div>
@@ -720,14 +720,14 @@ export default function Home() {
                         key={label}
                         className="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 backdrop-blur-xl"
                       >
-                        <span className="font-semibold text-white/75">{label}</span>
+                        <span className="font-semibold text-white/85">{label}</span>
                         <span className="font-black text-violet-300">{value}</span>
                       </motion.div>
                     ))}
                   </div>
                 </div>
 
-                <div className="relative flex flex-col gap-4 self-start">
+                <div className="relative z-20 flex flex-col gap-4 self-start">
                   <motion.div
                     whileHover={{ y: -6, scale: 1.02 }}
                     className="rounded-[1.7rem] border border-black/10 bg-white/80 p-5 shadow-xl backdrop-blur-xl"
