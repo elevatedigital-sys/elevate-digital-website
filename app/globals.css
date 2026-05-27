@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f8f8fb;
+  color: #090b13;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, a, input, textarea, select {
+  font: inherit;
+}
