@@ -1,12 +1,14 @@
-# Elevate Digital Website
+# Elevate Digital Official Final
 
-Full Next.js/Tailwind/Framer Motion website export from the current ChatGPT canvas.
+Full website export with:
+- Full app/page.jsx
+- EmailJS configured
+- Calendly Zoom meeting link
+- Updated animations and sections
+
+## Run
+npm install
+npm run dev
 
 ## Deploy
-Upload the contents of this folder to GitHub, then deploy on Vercel.
-
-## Important
-Replace EmailJS placeholder values in app/page.jsx:
-- YOUR_SERVICE_ID
-- YOUR_TEMPLATE_ID
-- YOUR_PUBLIC_KEY
+Upload the full folder to GitHub and connect it to Vercel.
