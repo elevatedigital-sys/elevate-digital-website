@@ -436,14 +436,14 @@ ${form.style}`;
             </div>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="relative overflow-hidden rounded-[2rem] border border-violet-200/40 bg-gradient-to-br from-violet-50/90 via-white/85 to-cyan-50/90 p-5 shadow-2xl shadow-violet-200/50 backdrop-blur-xl">
-            <div className="relative grid gap-5 lg:grid-cols-2">
-              <div className="rounded-[1.7rem] border border-white/10 bg-[#0b1020] p-6 text-white shadow-xl shadow-violet-500/10">
+          <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="relative overflow-hidden rounded-[2rem] border border-violet-200/40 bg-gradient-to-br from-violet-50/90 via-white/85 to-cyan-50/90 p-6 md:p-7 shadow-2xl shadow-violet-200/50 backdrop-blur-xl">
+            <div className="relative grid gap-7 lg:grid-cols-[1.18fr_0.82fr]">
+              <div className="rounded-[1.7rem] border border-white/10 bg-[#0b1020] p-7 text-white shadow-xl shadow-violet-500/10">
                 <div className="mb-5 flex items-center gap-3">
                   <div className="h-3 w-3 rounded-full bg-emerald-400 shadow-[0_0_20px_rgba(74,222,128,0.9)]" />
                   <p className="text-sm font-black tracking-[0.25em] text-emerald-300">ONLINE PRESENCE</p>
                 </div>
-                <h2 className="max-w-[12rem] text-[2rem] font-black leading-[1.14] tracking-[-0.03em] text-white sm:text-[2.15rem] xl:text-[2.2rem]">Your brand should look professional online.</h2>
+                <h2 className="max-w-[15rem] text-[1.72rem] font-black leading-[1.08] tracking-tight text-white xl:text-[1.85rem]">Your brand should look professional online.</h2>
                 <p className="mt-5 text-base leading-8 text-white/70">Websites, social media, and branded visuals built to make your business look clean and trustworthy.</p>
                 <div className="mt-6 grid gap-3">
                   {["Modern website", "Clean social media", "Professional brand"].map((item) => (
@@ -455,7 +455,7 @@ ${form.style}`;
                 </div>
               </div>
 
-              <div className="rounded-[1.7rem] border border-white/10 bg-gradient-to-br from-[#1b1640] via-[#111827] to-[#063142] p-6 text-white shadow-xl shadow-cyan-500/10">
+              <div className="rounded-[1.7rem] border border-white/10 bg-gradient-to-br from-[#1b1640] via-[#111827] to-[#063142] p-7 text-white shadow-xl shadow-cyan-500/10">
                 <p className="text-sm font-black tracking-[0.25em] text-violet-300">DIGITAL PRESENCE</p>
                 <h3 className="mt-3 text-3xl font-black leading-tight">Social platforms covered.</h3>
                 <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-[#0b1020]/80 p-6">
